@@ -272,10 +272,11 @@ export default function RegistrationInputs() {
         </Stack>
         
       <button style={{marginTop:'32px',fontWeight:500,fontSize:16.5}} className='btn1'>Register</button>
-      <h6 className='subtext' style={{fontFamily:'poppins'}}>Already have an account ?
-        <span className='login-text'>
-        <Link to="/login">Login</Link>
-        </span> 
+      <h6 className='subtext' style={{fontFamily:'poppins'}}>
+        Already have an account ?
+          <span className='login-text'>
+            <Link to="/login">Login</Link>
+          </span> 
       </h6>
       </>
     );
