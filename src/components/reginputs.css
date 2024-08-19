@@ -1,0 +1,61 @@
+@import '@fontsource/poppins/index.css';
+@import '@fontsource/roboto/index.css';
+.btn1{
+    width: 130px;
+    background: #8be8ff;
+    color: black;
+    height: 40px;
+    border: 0.5px solid #cecece;
+    border-radius: 6px;
+    transform: all 0.4s;
+    margin-left: 195px;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    background: #45bfe8;
+    color: white;
+}
+
+.subtext{
+    font-size: 15.5px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #1f1f1f;
+    margin-left: 140px;
+    text-decoration: none;
+}
+
+.login-text {
+    margin-left: 10px;
+    font-weight: 200;
+    color: #1f1f1f;
+}
+
+.login-text a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.login-text a:hover {
+    cursor: pointer;
+    text-decoration: underline; 
+    color: #45bfe8; 
+}
+
+.register-text {
+    margin-left: 10px;
+    font-weight: 200;
+    color: #1f1f1f;
+}
+
+.register-text a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.register-text a:hover {
+    cursor: pointer;
+    text-decoration: underline; 
+    color: #45bfe8; 
+}
