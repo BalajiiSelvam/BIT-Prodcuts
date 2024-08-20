@@ -5,7 +5,6 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { Link } from 'react-router-dom';
 
-
 export default function LoginInputs() {
     const [showPassword, setShowPassword] = useState(false);
     const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -76,7 +75,7 @@ export default function LoginInputs() {
         </Stack>
         <button style={{ marginTop: '32px', fontWeight: 500, fontSize: '16.5px' }} className='btn1'> 
         <span className = 'login-btn'>
-                   <Link to="/availableps">Login </Link>
+                   <Link to="/availps">Login </Link>
                 </span>
         </button>
         <h6 className='subtext' style={{ fontFamily: 'Poppins' }}>

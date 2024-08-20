@@ -7,8 +7,6 @@
     font-family: "poppins", sans-serif;
 }
 
-/* Existing CSS rules */
-
 .nav_image img {
     height: 70px;
     width: 110px;
@@ -52,13 +50,6 @@
     margin-top: -5px;
     margin-bottom: -15px;
 }
-
-/* .whole{
-    background: bisque;
-    height: 500px;
-    margin-left: 320px;
-    width: 100%;
-} */
 
 .menu_container {
     display: flex;
@@ -112,13 +103,15 @@
     min-width: 55px;
     display: flex;
     align-items: center;
-    font-size: 22px;
+    font-size: 24px;
     justify-content: center;
     border-radius: 4px;
 }
 
 .link span {
-    white-space: nowrap;
+   
+        white-space: nowrap;
+        font-size: 16px; 
 }
 
 .link:hover, .link.active {
@@ -133,51 +126,12 @@
 
 .btm {
     border-top: 3px solid rgba(0, 0, 0, 0.1);
-    margin-top: 70px;
-    padding-top: 15px;
-}
-
-@media screen and (max-width: 768px) {
-    .sidebar {
-        width: 40%; /* Set full width for smaller screens */
-        padding: 10px; /* Adjust padding */
-    }
-
-    .logo_items {
-        justify-content: left;
-        margin-left: 50px; /* Center the logo and items */
-    }
-
-    .nav_image img {
-        width: 70px;
-        height: 40px;
-    }
-
-    .logo_name {
-        font-size: 16px;
-        margin-left: -60px;
-    }
-
-    .title {
-        justify-content: left;
-        width: 240px;
-    }
+    margin-top: 320px;
 }
 
 .Topbar {
     margin-left: 280px;
     background-color: rgb(46, 52, 50);
-}
-
-.wholepage {
-    display: flex;
-    flex-direction: row; /* Ensures that the sidebar and content are side by side */
-}
-
-.whole {
-    display: flex;
-    flex-direction: row;
-    flex: 1; /* Takes up the remaining space after the sidebar */
 }
 
 .content {
@@ -195,20 +149,3 @@
     min-width: calc(100% - 300px); /* Adjust width considering sidebar */
 }
 
-/* Increased row height */
-.p-datatable .p-datatable-tbody > tr {
-    height: 80px; /* Adjust this value as needed */
-}
-
-.p-datatable .p-datatable-tbody > tr > td {
-    padding: 10px; /* Adjust padding to fit the row height */
-}
-
-/* Optional: Adjust the header height if needed */
-.p-datatable .p-datatable-thead > tr {
-    height: 60px; /* Adjust this value as needed */
-}
-
-.p-datatable .p-datatable-thead > tr > th {
-    padding: 10px; /* Adjust padding to fit the header height */
-}
