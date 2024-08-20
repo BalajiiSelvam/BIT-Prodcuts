@@ -1,6 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.css';
+import Bit from '../assets/bitpro.png'
+import '../components/sbar.css'
 
 export default function StudentSideBar() {
   return (
@@ -9,7 +11,7 @@ export default function StudentSideBar() {
       <nav className='sidebar locked'>
         <div className='logo_items flex'>
             <span className='nav_image'>
-              <img src="./logo192.png" alt=""/>
+              <img src={Bit} alt=""/>
             </span>
             <span className='logo_name'>BIT PRODUCTS</span>
         </div> 

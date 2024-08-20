@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+/* Existing CSS rules */
+
+.nav_image img {
+    height: 70px;
+    width: 110px;
+    object-fit: cover;
+    align-items: center;
+    margin-left: 50%;
+    margin-bottom: 19px;
+    margin-top: 5px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 280px;
+    background: rgb(252, 252, 252);
+    border-radius: 0px;
+    padding: 15px 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar:hover {
+    box-shadow: 0 0 20px rgb(192, 239, 255); /* Blue glow effect on hover */
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.logo_name {
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -90px;
+    margin-left: -83px;
+}
+
+.logo_items {
+    gap: 5px;
+    margin-top: -5px;
+    margin-bottom: -15px;
+}
+
+/* .whole{
+    background: bisque;
+    height: 500px;
+    margin-left: 320px;
+    width: 100%;
+} */
+
+.menu_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 60px;
+    overflow-y: auto;
+    height: calc(100% - 82px);
+}
+
+.menu_container::-webkit-scrollbar {
+    display: none;
+}
+
+.menu_title {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    display: inline;
+    justify-content: center;
+}
+
+.menu_title .title {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-indent: 24px;
+    position: relative;
+    border-radius: 8px;
+    color: rgb(121, 121, 121);
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(240, 240, 240);
+}
+
+.item {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    color: rgb(75, 75, 75);
+    transition: all 0.3s ease-in;
+}
+
+.link i {
+    height: 50px;
+    min-width: 55px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.link span {
+    white-space: nowrap;
+}
+
+.link:hover, .link.active {
+    background-color: rgb(62, 190, 229);
+    color: #fff;
+    padding-left: 12px;
+}
+
+.item:hover {
+    color: white;
+}
+
+.btm {
+    border-top: 3px solid rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 40%; /* Set full width for smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .logo_items {
+        justify-content: left;
+        margin-left: 50px; /* Center the logo and items */
+    }
+
+    .nav_image img {
+        width: 70px;
+        height: 40px;
+    }
+
+    .logo_name {
+        font-size: 16px;
+        margin-left: -60px;
+    }
+
+    .title {
+        justify-content: left;
+        width: 240px;
+    }
+}
+
+.Topbar {
+    margin-left: 280px;
+    background-color: rgb(46, 52, 50);
+}
+
+.wholepage {
+    display: flex;
+    flex-direction: row; /* Ensures that the sidebar and content are side by side */
+}
+
+.whole {
+    display: flex;
+    flex-direction: row;
+    flex: 1; /* Takes up the remaining space after the sidebar */
+}
+
+.content {
+    margin-left: 280px; /* Pushes the content to the right of the sidebar */
+    padding: 25px; /* Adds some padding around the content */
+    flex: 1; /* Ensures content takes up remaining space */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 20px;
+    min-width: calc(100% - 300px); /* Adjust width considering sidebar */
+}
+
+/* Increased row height */
+.p-datatable .p-datatable-tbody > tr {
+    height: 80px; /* Adjust this value as needed */
+}
+
+.p-datatable .p-datatable-tbody > tr > td {
+    padding: 10px; /* Adjust padding to fit the row height */
+}
+
+/* Optional: Adjust the header height if needed */
+.p-datatable .p-datatable-thead > tr {
+    height: 60px; /* Adjust this value as needed */
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+    padding: 10px; /* Adjust padding to fit the header height */
+}
