@@ -3,7 +3,7 @@
 .btn1{
     width: 130px;
     background: #8be8ff;
-    color: black;
+    color: #242424;
     height: 40px;
     border: 0.5px solid #cecece;
     border-radius: 6px;
@@ -18,7 +18,7 @@
 }
 
 .login-btn a {
-    color: #1f1f1f;
+    color: #242424;
     text-decoration: none;
 }
 .login-btn a:hover{
@@ -37,7 +37,7 @@
 
 .login-text {
     margin-left: 10px;
-    font-weight: 200;
+    font-weight: 400;
     color: #1f1f1f;
 }
 
@@ -54,7 +54,7 @@
 
 .register-text {
     margin-left: 10px;
-    font-weight: 200;
+    font-weight: 400;
     color: #1f1f1f;
 }
 
