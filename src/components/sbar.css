@@ -28,7 +28,7 @@
 }
 
 .sidebar:hover {
-    box-shadow: 0 0 20px rgb(192, 239, 255); /* Blue glow effect on hover */
+    box-shadow: 0 0 20px rgb(192, 239, 255); 
 }
 
 .flex {
@@ -135,17 +135,18 @@
 }
 
 .content {
-    margin-left: 280px; /* Pushes the content to the right of the sidebar */
-    padding: 25px; /* Adds some padding around the content */
-    flex: 1; /* Ensures content takes up remaining space */
+    margin-left: 280px; 
+    padding: 25px; 
+    flex: 1; 
 }
 
 .card {
-    background-color: #fff;
+    background: rgb(252, 252, 252);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
     margin: 20px;
-    min-width: calc(100% - 300px); /* Adjust width considering sidebar */
+    min-width: calc(100% - 300px); 
+    z-index: -1;
 }
 
