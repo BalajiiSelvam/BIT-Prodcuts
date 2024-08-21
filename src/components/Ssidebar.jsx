@@ -2,6 +2,7 @@ import React from 'react'
 import '@fortawesome/fontawesome-free/css/all.css';
 import './sbar.css'
 import BIT from '../assets/logo192.png'
+import { Link } from 'react-router-dom';
 
 export default function Ssidebar() {
   return (
@@ -21,17 +22,17 @@ export default function Ssidebar() {
               <span class="line"></span>
             </div>
             <li class="item">
-              <a href="#" class="link flex">
+              <Link to="/availps" class="link flex">
               <i className="bx bx-folder-open" style={{ fontSize: '24px' }}></i>
               <span>Availale PS</span>
-              </a>
+              </Link>
             </li>
-            <li class="item">
-              <a href="#" class="link flex">
-              <i class="bx bx-trip"style={{ fontSize: '24px' }}></i>
-              <span> Status Tracker</span>
-              </a>
-            </li>
+            <li className="item">
+  <Link to="/stracker" className="link flex">
+    <i className="bx bx-trip" style={{ fontSize: '24px' }}></i>
+    <span>Status Tracker</span>
+  </Link>
+</li>
             <li class="item">
               <a href="#" class="link flex">
               <i class="bx bx-file"></i>
