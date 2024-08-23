@@ -88,6 +88,7 @@
 
 .item {
     list-style: none;
+    margin-top: 6px;
 }
 
 .link {
@@ -114,19 +115,23 @@
         font-size: 16px; 
 }
 
-.link:hover, .link.active {
-    background-color: rgb(62, 190, 229);
+.link:hover,
+.link.active {
+    background-color: rgb(47, 194, 239); /* Glassmorphic blue with transparency */
     color: #fff;
     padding-left: 12px;
+    backdrop-filter: blur(12px); /* Increased blur on active */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
 }
+
 
 .item:hover {
     color: white;
 }
 
 .btm {
-    border-top: 3px solid rgba(0, 0, 0, 0.1);
-    margin-top: 320px;
+    border-top: 3.5px solid rgba(0, 0, 0, 0.1);
+    margin-top: 298px;
 }
 
 .Topbar {
