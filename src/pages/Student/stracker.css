@@ -24,10 +24,10 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 6px;
-    height: 600px;
-    background-color: #dadada;
-    border: 1px solid #acacac;
+    width: 4px;
+    height: 550px;
+    background-color: #c8c8c8;
+    border: 1px solid #c8c8c8;
     border-radius: 4px;
     margin-top: 60px;
 }
@@ -36,7 +36,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 80px 0;
+    margin: 75px 0;
 }
 
 .tracker-circle {

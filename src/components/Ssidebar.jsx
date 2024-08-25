@@ -13,10 +13,10 @@ export default function Ssidebar() {
 
   return (
     <>
-      <nav className='sidebar locked'>
+      <nav className='sidebar-locked'>
         <div className='logo_items flex'>
           <span className='nav_image'>
-            <img src={BIT} alt="" />
+            <img src={BIT} alt="BIT Logo" />
           </span>
           <span className='logo_name'>BIT PRODUCTS</span>
         </div>
@@ -48,24 +48,24 @@ export default function Ssidebar() {
                 </Link>
               </li>
               <li className='item'>
-                <a
-                  href="#"
-                  className={`link flex ${activeLink === '/report' ? 'active' : ''}`}
-                  onClick={() => handleLinkClick('/report')}
+                <Link
+                  to="/reportsub"
+                  className={`link flex ${activeLink === '/reportsub' ? 'active' : ''}`}
+                  onClick={() => handleLinkClick('/reportsub')}
                 >
                   <i className="bx bx-file"></i>
                   <span>Report Submission</span>
-                </a>
+                </Link>
               </li>
               <li className='item'>
-                <a
-                  href="#"
+                <Link
+                  to="/dashboard"
                   className={`link flex ${activeLink === '/dashboard' ? 'active' : ''}`}
                   onClick={() => handleLinkClick('/dashboard')}
                 >
                   <i className="bx bx-grid-alt"></i>
                   <span>Dashboard</span>
-                </a>
+                </Link>
               </li>
               <ul className='btm'>
                 <li className='item'>

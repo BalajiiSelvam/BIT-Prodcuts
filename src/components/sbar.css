@@ -17,7 +17,7 @@
     margin-top: 5px;
 }
 
-.sidebar {
+.sidebar-locked {
     position: fixed;
     height: 100%;
     width: 280px;
@@ -27,7 +27,7 @@
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar:hover {
+.sidebar-locked:hover {
     box-shadow: 0 0 20px rgb(192, 239, 255); 
 }
 
