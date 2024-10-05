@@ -10,6 +10,9 @@ export default function ReportSubmission() {
       <div className='top-box'>
         <h2>&lt;&lt; REPORT SUBMISSION &gt;&gt;</h2>
       </div>
+      <div className='form-container'>
+        
+      </div>
     
     </div>
     </>

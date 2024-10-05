@@ -12,7 +12,7 @@
     width: 110px;
     object-fit: cover;
     align-items: center;
-    margin-left: 50%;
+    margin-left: 63%;
     margin-bottom: 19px;
     margin-top: 5px;
 }
@@ -20,7 +20,7 @@
 .sidebar-locked {
     position: fixed;
     height: 100%;
-    width: 280px;
+    width: 290px;
     background: rgb(252, 252, 252);
     border-radius: 0px;
     padding: 15px 10px;
@@ -42,7 +42,7 @@
     display: block;
     font-family: 'Poppins', sans-serif;
     margin-bottom: -90px;
-    margin-left: -83px;
+    margin-left: -72px;
 }
 
 .logo_items {
@@ -97,6 +97,7 @@
     margin-bottom: 5px;
     color: rgb(75, 75, 75);
     transition: all 0.3s ease-in;
+    border-radius: 9px;
 }
 
 .link i {
@@ -106,7 +107,7 @@
     align-items: center;
     font-size: 24px;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
 .link span {
@@ -117,11 +118,11 @@
 
 .link:hover,
 .link.active {
-    background-color: rgb(47, 194, 239); /* Glassmorphic blue with transparency */
-    color: #fff;
+    background-color: rgb(230, 246, 255); 
+    border: 2px solid rgb(109, 221, 255); 
     padding-left: 12px;
-    backdrop-filter: blur(12px); /* Increased blur on active */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    /* backdrop-filter: blur(12px); 
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);  */
 }
 
 
