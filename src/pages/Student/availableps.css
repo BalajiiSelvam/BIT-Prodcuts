@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-
+.body{
+  background-color: none;
+}
 .availableps-container {
     display: flex;
     flex-direction: row;
@@ -10,11 +12,11 @@
     /* Ensure the sidebar is styled correctly */
     position: fixed;
     height: 100%;
-    width: 280px;
+    width: 250px;
     background: rgb(252, 252, 252);
     border-radius: 0;
     padding: 15px 10px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  /*  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); */
   }
   
   .content {
@@ -23,21 +25,22 @@
     position: relative; 
   }
   
-  .top-box {
+ 
+  /* .top-box {
     position: absolute;
-    display: flex;            /* Use Flexbox for horizontal alignment */
-    align-items: center;      /* Vertically center the items */
-    justify-content: center;  /* Horizontally center the items */
+    display: flex;            
+    align-items: center;      
+    justify-content: center;  
     text-align: center;  
-    height: 75px;
+    height: 65px;
     width: 1500px;
     top: 1px;
-    right: -73.5px; 
-    background: rgb(255, 255, 255);
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    left: -290px;
+    background: rgb(252, 252, 252);
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); 
     padding: 15px;
     z-index: 1; 
-  }
+  } */
   
   .top-box h2 {
     margin: 0;               
@@ -48,5 +51,5 @@
   }
   
 
-  
-  
+
+

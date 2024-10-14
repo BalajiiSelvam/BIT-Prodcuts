@@ -11,8 +11,9 @@ export default function AvailablePs() {
       <div className='top-box'>
         <h2>&lt;&lt; AVAILABLE PROBLEM STATEMENTS &gt;&gt;</h2>
       </div>
-    
+   
     </div>
+
   </div>
    
   )

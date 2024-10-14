@@ -4,17 +4,15 @@ import './ReportSubmission.css'
 
 export default function ReportSubmission() {
   return (
-    <>
-    <StudentSideBar />
-    <div className='content'>
-      <div className='top-box'>
-        <h2>&lt;&lt; REPORT SUBMISSION &gt;&gt;</h2>
-      </div>
-      <div className='form-container'>
-        
-      </div>
+    <div className='reportconatiner'>
+        <StudentSideBar />
+        <div className='content'>
+            <div className='top-box'>
+              <h2>&lt;&lt; REPORT SUBMISSION &gt;&gt;</h2>
+             </div>
+   
     
+        </div>
     </div>
-    </>
   )
 }

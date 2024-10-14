@@ -1,0 +1,8 @@
+.graph-container {
+    display: grid;
+    grid-template-columns: 1fr; /* 1x1 grid */
+    margin-top: 20px; /* Space above the graph */
+    width: 100%; /* Full width */
+    height: 450px; /* Set height for the graph */
+    background-color: #ffffff;
+  }

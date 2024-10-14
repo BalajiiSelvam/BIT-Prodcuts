@@ -1,7 +1,28 @@
-.form-container{
-    background: rgb(255, 255, 255);
+.top-box h2 {
+    margin: 0;               
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-left: -560px;
+  }
+  .content {
+    margin-left: 580px; 
+    padding: 25px;
+    position: relative; 
+    
+  }
+  .sidebar {
+    /* Ensure the sidebar is styled correctly */
+    position: fixed;
     height: 100%;
-    width: 100%;
-    margin-top: 60px;
-    margin-left: -6px;
-}
+    width: 250px;
+    background: rgb(252, 252, 252);
+    border-radius: 0;
+    padding: 15px 10px;
+  /*  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); */
+  }
+  .reportcontainer {
+    display: flex;
+    flex-direction: row;
+ 
+  }

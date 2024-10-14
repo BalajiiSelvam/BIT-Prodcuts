@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import '@fontsource/poppins/index.css';
+@import '@fontsource/roboto/index.css';
 
 * {
     margin: 0;
@@ -20,16 +22,16 @@
 .sidebar-locked {
     position: fixed;
     height: 100%;
-    width: 290px;
+    width: 275px;
     background: rgb(252, 252, 252);
     border-radius: 0px;
     padding: 15px 10px;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);*/
 }
 
-.sidebar-locked:hover {
+/* .sidebar-locked:hover {
     box-shadow: 0 0 20px rgb(192, 239, 255); 
-}
+} */
 
 .flex {
     display: flex;
@@ -131,8 +133,8 @@
 }
 
 .btm {
-    border-top: 3.5px solid rgba(0, 0, 0, 0.1);
-    margin-top: 298px;
+    border-top: 3.5px solid rgba(255, 255, 255, 0.1);
+    margin-top: -12px;
 }
 
 .Topbar {

@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* .body{
+    background-color: none;
+    overflow-y: auto;
+  } */
+  .dashboardcontainer {
+      display: flex;
+      flex-direction: row;
+   
+    }.top-box h2 {
+    margin: 0;               
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-left: -160px;
+  }
+  .content {
+    margin-left: 280px; 
+    padding: 25px;
+    position: relative; 
+    
+  }
+  .sidebar {
+    /* Ensure the sidebar is styled correctly */
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    background: rgb(252, 252, 252);
+    border-radius: 0;
+    padding: 15px 10px;
+  /*  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); */
+  }
+
+  /* .top-box {
+    position: absolute;
+    display: flex;            
+    align-items: center;      
+    justify-content: center;  
+    text-align: center;  
+    height: 65px;
+    width: 1500px;
+    top: 1px;
+    left: -290px;
+    background: rgb(252, 252, 252);
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); 
+    padding: 15px;
+    z-index: 1; 
+  } */
+  .user-info-box {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9; /* Light background for contrast */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: -300px;
+    height: 270px;
+    width: 480px;
+}
+.status-active {
+    display: inline-block; /* Allows padding and margin to work properly */
+    background-color: rgb(230, 246, 255); 
+  border: 2px solid rgb(109, 221, 255); 
+ border-radius: 8px; /* Rounded corners */
+    padding: 3px 6px; /* Padding around the text */
+    color: #289aa7; /* Green text color */
+    font-size: 0.75rem;
+    font-weight: bold;
+  
+}
+.status-activeno {
+  display: inline-block; /* Allows padding and margin to work properly */
+  background-color: #edd4d4; /* Light green background */
+  border: 1.5px solid #a72828; /* Green border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 3px 6px; /* Padding around the text */
+  color: #a72828; /* Green text color */
+  font-size: 0.75rem;
+  font-weight: bold;
+
+}
+
+.profile-image {
+    width: 180px; /* Set a width for the image */
+    height: 210px; /* Set a height for the image */
+    border-radius: 8px; /* Circular image */
+    margin-right: 15px; /* Space between image and text */
+}
+
+.user-details {
+    text-align: justify; /* Aligns text to justify */
+    margin-left: 10px; /* Moves the text a little to the right */
+}
+
+.user-details h3 {
+    font-family: 'Poppins', sans-serif; /* Sets the font family */
+    font-size: 1.4rem; /* Increases the font size */
+    margin: 0; /* Removes default margin */
+}
+
+.user-details p {
+    font-family: 'Poppins', sans-serif; /* Sets the font family */
+    font-size: 1rem; /* Increases the font size */
+    margin: 5px 0; /* Adds spacing between paragraphs */
+}
+.sem{
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(69, 69, 69);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  row-gap: 12px; /* Space between rows */
+  column-gap: 15px; /* Negative space between columns */
+  margin-top: -269px;
+  margin-left: 190px;
+}
+
+.grid-item {
+  background: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Padding */
+  text-align: left; /* Left-align text */
+  border-radius: 5px; /* Rounded corners */
+  width: 447px;
+  height: 127.5px;
+}
+
+.item-title {
+  font-size: 21px; /* Bigger text */
+  font-family: 'Poppins', sans-serif;
+}
+
+.item-number {
+  font-size: 28px; /* Normal size for numbers */
+  margin-top: 5px; /* Space between title and number */
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+
+}
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 1x2 grid */
+  margin-top: 20px; /* Spacing from the grid above */
+  column-gap: 315px;
+  z-index: -1;
+}
+
+.table-item {
+  background: #f9f9f9; /* Light background for contrast */
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  padding: 25px; /* Padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-left: -295px;
+  margin-top: -6px;
+  font-size: 16px;
+ height: 375px;
+}
+
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Collapse borders */
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1;
+  
+}
+
+th{
+  background-color: #f0f0f0;
+}
+
+th:first-child, td:first-child {
+  width: 10%; /* Set width for the first column */
+  text-align: center;
+}
+
+th:nth-child(2), td:nth-child(2) {
+  width: 70%; /* Set width for the second column */
+  
+}
+th:last-child, td:last-child{
+  text-align: center;
+}
+th, td {
+  border: 1px solid #717171; /* Cell border */
+  padding: 15px; /* Cell padding */
+  text-align: left; /* Left-align text */
+  
+}
+.table-controls {
+  margin-top: 10px; /* Space above buttons */
+  display: flex; /* Flexbox for buttons */
+  /*justify-content: space-between; */
+  width: 120px; /* Width of the control area */
+  height: 40px; /* Height of the control area */
+  border-radius: 8px; /* Increased border radius for rounded corners */
+  padding: 5px; /* Add padding inside the controls */
+}
+
+.table-controls button {
+  padding: 0 10px; /* Padding inside buttons */
+  border-radius: 5px; /* Border radius for buttons */
+  border: 1px solid #ccc; /* Border for buttons */
+  background-color: #f0f0f0; /* Background color for buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  font-size: 15px; /* Font size */
+  font-family: 'Poppins', sans-serif; /* Font family */
+}
+
+.table-controls button:first-child {
+  margin-right: 495px; /* Push the first button to the left */
+  margin-left: -4px;
+}
+.table-controls button:hover {
+  background-color: rgb(230, 246, 255); 
+  border: 2px solid rgb(109, 221, 255); 
+ 
+}
+

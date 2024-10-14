@@ -111,3 +111,20 @@ body {
     height: 5px;
     width: 28px;
 }
+
+ 
+.top-box {
+    position: absolute;
+    display: flex;            /* Use Flexbox for horizontal alignment */
+    align-items: center;      /* Vertically center the items */
+    justify-content: center;  /* Horizontally center the items */
+    text-align: center;  
+    height: 65px;
+    width: 1500px;
+    top: 1px;
+    left: -290px;
+    background: rgb(252, 252, 252);
+   /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); */
+    padding: 15px;
+    z-index: 1; 
+  }
