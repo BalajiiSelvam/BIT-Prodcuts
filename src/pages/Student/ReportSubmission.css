@@ -23,21 +23,35 @@
 .content-container {
   display: grid;
   grid-template-columns: 40% 60%;
-  gap: 10px;
+  gap: 15px;
   flex: 1;
   margin-left: 275px;
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 25px;
   overflow-y: auto; /* Enable vertical scrolling if needed */
   overflow-x: hidden;
 }
 
-.sub-container1,
-.sub-container2 {
+.sub-container1{
   background-color: #f9f9f9;
   padding: 30px;
   /* border: 1px solid #ddd; */
+  border-radius: 10px;
 }
+
+.sub-container2 {
+  background-color: #f9f9f9;
+  padding: 40px;
+  /* border: 1px solid #ddd; */
+  border-radius: 10px;
+}
+
+.sub-container1:hover,
+.sub-container2:hover{
+  border: 1px solid #45bfe8; 
+  box-shadow: 0 0 12px #97e5ff;
+}
+
 
 .sub-container1 {
   font-family: 'Poppins', sans-serif;
@@ -72,4 +86,46 @@
   list-style-type: decimal;
   font-size: 16px;
   text-align: justify;
+}
+
+.report-form {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.report-form label {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.report-form input[type="text"],
+.report-form textarea,
+.report-form input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  border-radius: 4px;
+  caret-color: rgb(109, 221, 255); 
+}
+.report-form input[type="text"]:hover,
+.report-form textarea:hover,
+.report-form input[type="file"]:hover{
+  border: 1px solid rgb(109, 221, 255) ;
+}
+
+.report-form button {
+  padding: 10px;
+  background-color:rgb(5, 179, 232) ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.report-form button:hover {
+  background-color:rgb(109, 221, 255) ;
 }

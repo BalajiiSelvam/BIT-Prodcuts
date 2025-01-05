@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import StudentSideBar from '../../components/Ssidebar';
 import './ReportSubmission.css';
 
 export default function ReportSubmission() {
+  const [teamSize, setTeamSize] = useState(1);
+  const handleTeamSizeChange = (e) => {
+    setTeamSize(parseInt(e.target.value, 10));
+  };
+
+  const renderTeamMembers = () => {
+    const members = [];
+    for (let i = 1; i < teamSize; i++) {
+      members.push(
+        <div key={i} className="team-member">
+          <label>
+            Name:
+            <input type="text" name={`name_${i}`} required />
+          </label>
+          <label>
+            Roll No:
+            <input type="text" name={`rollno_${i}`} required />
+          </label>
+          <label>
+            Department:
+            <input type="text" name={`department_${i}`} required />
+          </label>
+          <label>
+            Semester:
+            <input type="text" name={`semester_${i}`} required />
+          </label>
+        </div>
+      );
+    }
+    return members;
+  };
+
   return (
     <div className="report-submission-container">
       <StudentSideBar />
@@ -34,10 +66,53 @@ export default function ReportSubmission() {
             <li>Proofreading: Review your report for any grammatical or formatting errors.</li>
             <li>Submission: Submit your report by the deadline in the specified format (e.g., PDF).</li>
           </ol>
-</div>
-        
+        </div>
         <div className="sub-container2">
-          {/* Add your content here for the second sub-container */}
+          <form className="report-form">
+            <label>
+              Name:
+              <input type="text" name="name_0" required />
+            </label>
+            <label>
+              Roll No:
+              <input type="text" name="rollno_0" required />
+            </label>
+            <label>
+              Department:
+              <input type="text" name="department_0" required />
+            </label>
+            <label>
+              Semester:
+              <input type="text" name="semester_0" required />
+            </label>
+            <label> 
+              Team Members: 
+              <span style={{ marginRight: '10px' }}></span>
+              <input 
+                type="number" 
+                name="teamSize" 
+                min=" 01" 
+                value={teamSize} 
+                onChange={handleTeamSizeChange} 
+                style={{ marginRight: '10px' }} 
+              /> 
+            </label>
+
+            {renderTeamMembers()}
+            <label>
+              Guide Name:
+              <input type="text" name="guideName" required />
+            </label>
+            <label>
+              Review Completion:
+              <input type="file" name="reviewCompletion" accept="image/*" />
+            </label>
+            <label>
+              Report:
+              <input type="file" name="report" accept="application/pdf" />
+            </label>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
     </div>
