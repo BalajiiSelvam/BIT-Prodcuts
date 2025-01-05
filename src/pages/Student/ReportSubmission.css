@@ -20,7 +20,7 @@
   color: #333;
   margin-left: 150px;
 }
-.content-container {
+.content-container1 {
   display: grid;
   grid-template-columns: 40% 60%;
   gap: 15px;
@@ -48,7 +48,7 @@
 
 .sub-container1:hover,
 .sub-container2:hover{
-  border: 1px solid #45bfe8; 
+  /* border: 1px solid #45bfe8;  */
   box-shadow: 0 0 12px #97e5ff;
 }
 

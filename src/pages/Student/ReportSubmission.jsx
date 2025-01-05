@@ -41,7 +41,7 @@ export default function ReportSubmission() {
       <div className="header-box">
         <h1>&lt;&lt; REPORT SUBMISSION &gt;&gt;</h1>
       </div>
-      <div className="content-container">
+      <div className="content-container1">
         <div className="sub-container1">
           <h2>Instructions</h2>
           <ol>
