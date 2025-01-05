@@ -35,6 +35,41 @@
 .sub-container1,
 .sub-container2 {
   background-color: #f9f9f9;
-  padding: 22px;
-  border: 1px solid #ddd;
+  padding: 30px;
+  /* border: 1px solid #ddd; */
+}
+
+.sub-container1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.sub-container1 h2 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.sub-container1 ol {
+  padding-left: 20px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.sub-container1 ol li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.sub-container1 ol ol {
+  padding-left: 20px;
+  margin-top: 5px;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.sub-container1 ol ol li {
+  list-style-type: decimal;
+  font-size: 16px;
+  text-align: justify;
 }
