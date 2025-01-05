@@ -10,7 +10,12 @@ export default function ReportSubmission() {
         <h1>&lt;&lt; REPORT SUBMISSION &gt;&gt;</h1>
       </div>
       <div className="content-container">
-        {/* Add your content here */}
+        <div className="sub-container1">
+          {/* Add your content here for the first sub-container */}
+        </div>
+        <div className="sub-container2">
+          {/* Add your content here for the second sub-container */}
+        </div>
       </div>
     </div>
   );
