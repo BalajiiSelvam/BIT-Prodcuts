@@ -1,78 +1,30 @@
-.report-container {
-  display: flex; /* Use flexbox for layout */
+.report-submission-container {
+  display: flex; 
+  flex-direction: column; 
+  height: 100vh;
 }
 
-.content {
-  flex: 1; /* Take up remaining space */
-  padding: 25px; /* Add some padding */
-  margin-left: 280px; /* Keep left margin for the sidebar */
+.content-container { 
+  flex: 1; 
+  background-color: #f4f4f4; 
+  width: calc(100% ); 
+  margin-left: -5px; 
+  padding: 20px; 
+  overflow-y: auto; 
+}
+.header-box {
+  width: calc(100%); /* Adjust 250px to match the width of your sidebar */
+  margin-left: -5px; /* Adjust 250px to match the width of your sidebar */
+  background: rgb(252, 252, 252);
+  text-align: center;
+  padding: 20px;
+  /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) */
 }
 
-.top-box1 {
-  position: sticky; /* Keep it fixed within its parent */
-  top: 0; /* Stick to the top of the parent */
-  margin-bottom: 20px; /* Space below the header */
-  background-color: white; /* Background color */
-  height: 60px; /* Fixed height */
-  display: flex; /* Center content */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  border: 1px solid #ddd; /* Optional border */
-  width: calc(100% - 280px); /* Adjust width based on the sidebar */
-  z-index: 1; /* Ensure it's on top */
-}
-
-.top-box1 h2 {
-  margin: 0;               
+.header-box h1 {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   color: #333;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  column-gap: 12px; /* Space between columns */
-}
-
-.instruction-box,
-.form-box {
-  background-color: #f9f9f9; /* Light background */
-  padding: 20px; /* Add padding */
-  border: 1px solid #ddd; /* Optional border */
-  border-radius: 5px; /* Rounded corners */
-  margin-top: 500px;
-  margin-left: -490px;
-}
-
-.instruction-box h3,
-.form-box h3 {
-  margin-top: 0; /* Remove top margin */
-}
-
-.form-box label {
-  display: block; /* Labels on new lines */
-  margin: 10px 0 5px; /* Spacing around labels */
-}
-
-.form-box input,
-.form-box textarea {
-  width: 100%; /* Full width inputs */
-  padding: 8px; /* Input padding */
-  margin-bottom: 15px; /* Space between inputs */
-  border: 1px solid #ccc; /* Border for inputs */
-  border-radius: 4px; /* Rounded corners */
-}
-
-.form-box button {
-  background-color: #007bff; /* Button color */
-  color: white; /* Text color */
-  padding: 10px 15px; /* Button padding */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-}
-
-.form-box button:hover {
-  background-color: #0056b3; /* Darker on hover */
+  margin-left: 150px;
 }
