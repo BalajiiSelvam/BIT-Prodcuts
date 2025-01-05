@@ -6,6 +6,7 @@ import AvailPs from './pages/Student/AvailablePs'
 import Stracker from './pages/Student/Stracker'
 import ReportSubmission from './pages/Student/ReportSubmission'
 import Dashboard from './pages/Student/Dashboard'
+import Problems from './pages/Student/problemregistration'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/stracker" element={<Stracker />} />
       <Route path="/reportsub" element={<ReportSubmission />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/problemregistration" component={<Problems/>} />
     </Routes>
   </BrowserRouter>
   )

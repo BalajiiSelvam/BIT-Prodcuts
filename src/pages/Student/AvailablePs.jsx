@@ -104,7 +104,21 @@ export default function AvailablePs() {
               <td>Security</td>
               <td><button className="View-button">View</button></td>
             </tr>
+
           </tbody>
+          <tfoot>
+            <tr>
+              <td colSpan="6">
+                <div className="pagination">
+                  <button className="pagination-button">Previous</button>
+                  <button className="pagination-button">1</button>
+                  <button className="pagination-button">2</button>
+                  <button className="pagination-button">3</button>
+                  <button className="pagination-button">Next</button>
+                </div>
+              </td>
+            </tr>
+          </tfoot>
         </table>
       </div>
     </div>

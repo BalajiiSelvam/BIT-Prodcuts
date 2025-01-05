@@ -1,0 +1,46 @@
+.project-detail-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .document-container {
+    flex: 1;
+    margin-left: 275px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .document-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .document-content {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .document-content p {
+    margin: 10px 0;
+  }
+  
+  .register-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .register-button:hover {
+    background-color: #45a049;
+  }
+  
