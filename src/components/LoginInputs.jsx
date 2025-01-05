@@ -81,7 +81,7 @@ export default function LoginInputs() {
         <h6 className='subtext' style={{ fontFamily: 'Poppins' }}>
             Don't have an account ?
                 <span className='register-text'>
-                   <Link to="/">Register</Link>
+                   <Link to="/pssub">Register</Link>
                 </span>
         </h6>
         </>
