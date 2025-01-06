@@ -1,0 +1,115 @@
+.dash-container {
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh;
+}
+  
+.header-box4 {
+    width: calc(100%); /* Adjust 250px to match the width of your sidebar */
+    margin-left: -5px; /* Adjust 250px to match the width of your sidebar */
+    background: rgb(252, 252, 252);
+    text-align: center;
+    padding: 20px;
+    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) */
+}
+  
+.header-box4 h1 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #333;
+    margin-left: 150px;
+}
+
+.content-container4 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+    margin-left: 285px;
+    background-color: transparent;
+}
+
+.dashboard {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px; /* Add margin to separate the dashboard from the table */
+}
+  
+.left-card {
+    flex: 1;
+    background-color: white;
+    padding: 30px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    height: 250px;
+    font-size: 15px;
+}
+  
+.right-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -5px;
+    flex: 2;
+    height: 250px;
+    margin-right: 50px;
+    margin-top: -15px;
+    font-size: 14px;
+}
+  
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    height: 100px;
+}
+  
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+  
+.card-content h2 {
+    margin-top: 0;
+}
+  
+.card-content p {
+    margin: 5px 0;
+}
+  
+.ps-table { 
+    width: 1300px; 
+    border-collapse: collapse; 
+} 
+
+.ps-table th, .ps-table td { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    text-align: left; 
+} 
+
+.ps-table th { 
+    background-color: #f2f2f2; 
+} 
+
+.pagination { 
+    display: flex; 
+    justify-content: center; 
+    padding: 10px 0; 
+} 
+
+.pagination-button { 
+    margin: 0 5px; 
+    padding: 5px 10px; 
+    background-color: #12baf1;
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+} 
+
+.pagination-button:hover { 
+    background-color: #5bd6ff;
+}

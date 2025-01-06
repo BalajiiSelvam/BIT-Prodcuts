@@ -4,7 +4,7 @@ import './sbar.css';
 import BIT from '../assets/logo192.png';
 import { Link } from 'react-router-dom';
 
-export default function Ssidebar() {
+export default function Fsidebar() {
   const [activeLink, setActiveLink] = useState('/pssub'); // Default active link
 
   const handleLinkClick = (path) => {
@@ -49,9 +49,9 @@ export default function Ssidebar() {
               </li>
               <li className='item'>
                 <Link
-                  to="/"
-                  className={`link flex ${activeLink === '/' ? 'active' : ''}`}
-                  onClick={() => handleLinkClick('/')}
+                  to="/slotbook"
+                  className={`link flex ${activeLink === '/slotbook' ? 'active' : ''}`}
+                  onClick={() => handleLinkClick('/slotbook')}
                 >
                   <i className="bx bx-file"></i>
                   <span>Slot Booking</span>
@@ -59,9 +59,9 @@ export default function Ssidebar() {
               </li>
               <li className='item'>
                 <Link
-                  to="/"
-                  className={`link flex ${activeLink === '/' ? 'active' : ''}`}
-                  onClick={() => handleLinkClick('/')}
+                  to="/dash"
+                  className={`link flex ${activeLink === '/dash' ? 'active' : ''}`}
+                  onClick={() => handleLinkClick('/dash')}
                 >
                   <i className="bx bx-grid-alt"></i>
                   <span>Dashboard</span>
