@@ -39,9 +39,9 @@ export default function Fsidebar() {
               </li>
               <li className='item'>
                 <Link
-                  to="/"
-                  className={`link flex ${activeLink === '/' ? 'active' : ''}`}
-                  onClick={() => handleLinkClick('/')}
+                  to="/approval"
+                  className={`link flex ${activeLink === '/approval' ? 'active' : ''}`}
+                  onClick={() => handleLinkClick('/approval')}
                 >
                   <i className="bx bx-trip" style={{ fontSize: '24px' }}></i>
                   <span>Request Approval</span>

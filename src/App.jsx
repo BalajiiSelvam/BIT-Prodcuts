@@ -9,7 +9,7 @@ import Dashboard from './pages/Student/Dashboard';
 // import Problems from './pages/Student/problemregistration';
 import PSsubmission from './pages/Faculty/PSsubmission';
 import Slotbooking from './pages/Faculty/Slotbooking';
-// import Approval from './pages/Faculty/approval'
+import Approval from './pages/Faculty/approval'
 import Dash from './pages/Faculty/dash';
 import './App.css';
 
@@ -25,7 +25,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/pssub" element={<PSsubmission />} />
            <Route path="/slotbook" element={<Slotbooking />} />
-           {/* <Route path="/approval" element={<Approval />} /> */}
+           <Route path="/approval" element={<Approval />} />
         <Route path="/dash" element={<Dash />} />
      {/*   <Route path="/problemregistration" element={<Problems />} /> */}
       </Routes>
